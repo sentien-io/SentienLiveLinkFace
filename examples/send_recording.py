@@ -6,6 +6,7 @@ from pylivelinkface import PyLiveLinkFace, FaceBlendShape
 UDP_IP = "127.0.0.1"
 UDP_PORT = 11111
 CSV_FILE = "../recording/recording.csv"  # Change this to your actual CSV file
+FRAME_RATE = 60
 
 # Map each CSV column to its corresponding FaceBlendShape
 COLUMN_TO_BLENDSHAPE = {
@@ -90,7 +91,7 @@ def main():
                     value = float(row[col_name])
                     py_face.set_blendshape(blendshape, value)
             s.sendall(py_face.encode())
-            time.sleep(0.1)  # Adjust based on the frame rate of your animation
+            time.sleep(1/FRAME_RATE)  # Adjust based on the frame rate of your animation
 
     except KeyboardInterrupt:
         pass

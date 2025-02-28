@@ -1,0 +1,23 @@
+{
+  "endTimecode" : "11:25:47:31.036",
+  "take" : 24,
+  "appVersion" : "v1.4.2 (build 134)",
+  "identifier" : "20250228_MySlate_24",
+  "subject" : "Masums_iPhone",
+  "startTimecode" : "11:25:20:22.440",
+  "startTimestamp" : {
+    "value" : 559520374015734,
+    "timescale" : 1000000000
+  },
+  "calibrated" : false,
+  "deviceModel" : "iPhone14,4",
+  "videoTargetFrameRate" : 60,
+  "slate" : "MySlate",
+  "version" : 1,
+  "frames" : 1627,
+  "date" : "2025-02-28T14:56:23Z",
+  "endTimestamp" : {
+    "timescale" : 1000000000,
+    "value" : 559547517280053
+  }
+}
